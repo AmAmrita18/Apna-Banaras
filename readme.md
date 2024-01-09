@@ -1,8 +1,8 @@
-# Apna Banaras Landing Page
+# Apna Banaras
 
 ## Overview
 
-Welcome to the Apna Banaras Landing Page project! This project is a simple yet visually appealing landing page designed to showcase the cultural richness and charm of Varanasi, commonly known as Banaras. Through HTML and CSS, we aim to provide visitors with a glimpse of the special places and delightful cuisine that Banaras has to offer.
+Welcome to the Apna Banaras project! This project is a simple yet visually appealing landing page designed to showcase the cultural richness and charm of Varanasi, commonly known as Banaras. Through HTML and CSS, I aim to provide visitors with a glimpse of the special places and delightful cuisine that Banaras has to offer.
 
 ## Features
 
