@@ -1,0 +1,293 @@
+.full {
+    background-color: black;
+    filter: brightness(70%);
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    /* padding: -1px 14px; */
+    /* margin-top: 8px; */
+    height: 100px;
+    justify-content: center;
+    
+}
+
+#home::before {
+    filter: brightness(20%);
+
+    content: "";
+    background: url(../image/nav.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 18%;
+    width: 100%;
+    /* top: 0px; */
+    /* left: 0px; */
+    z-index: -1;
+    border-radius: 107px;
+    /* opacity: 0.8; */
+}
+
+/*#home h3 {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Concert One', cursive;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: black;
+}
+*/
+.nav {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  
+}
+.nav-component{
+    display: flex;
+    padding-right: 50px;
+    
+}
+.place {
+    color: white;
+    padding-left: 50px;
+    font-size: 2.5rem;
+    margin: auto;
+    font-family: 'Patrick Hand', cursive;
+
+}
+.nav-component h1{
+    font-size: 22px;
+    color: white;
+}
+.city {
+    font-family: 'Chewy', cursive;
+    font-size: 1.5rem;
+
+    color: white;
+    margin: auto;
+    
+}
+
+
+#famous-place{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+   
+}
+
+
+
+.similar {
+    border: 2px solid white;
+    
+    margin: 11px 31px;
+    border-radius: 28px;
+    background-color: black;
+    color: white;
+    width: 85%;
+
+}
+.similar:hover{
+    filter: brightness(70%);
+}
+.similar img {
+    padding-top: 8px;
+    width: 350px;
+    height: 240px;
+    margin: auto;
+    display: block;
+}
+
+.similar p {
+    text-align: center;
+}
+
+.h-primary {
+    text-align: center;
+    margin: auto;
+    color: white;
+    background-color: black;
+    font-size: 3.0rem;
+    padding: 30px;
+    font-family: 'Chewy', cursive;
+
+
+}
+
+.h-secondary {
+    text-align: center;
+    font-size: 2.0rem;
+    padding: 12px;
+    font-family: 'Chewy', cursive;
+
+}
+
+.center {
+    text-align: center;
+    font-size: medium;
+    margin: 5px;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.food {
+    font-family: 'Patrick Hand', cursive;
+}
+
+
+
+#services {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    background-color: black;
+}
+
+
+.equal {
+    border: 2px solid white;
+    width: 85%;
+    margin: 11px 31px;
+    border-radius: 28px;
+    color: white;
+}
+.equal:hover{
+    filter: brightness(70%);
+}
+.equal img {
+    width: 350px;
+    height: 350px;
+    padding-top: 8px;
+    margin: auto;
+    display: block;
+}
+
+.equal p {
+    text-align: center;
+}
+
+
+#container {
+    /* position: relative; */
+
+    background-color: white;
+
+
+}
+
+.footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    border-top: 1px solid white;
+    font-family: 'Patrick Hand', cursive;
+    margin-top: 15px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .header1,
+    .header2 {
+        height: auto;
+    }
+
+    .header-section {
+        padding: 20px;
+    }
+
+    .place {
+        font-size: 2rem;
+        padding-left: 20px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .h-primary {
+        font-size: 2rem;
+        padding: 20px;
+    }
+
+    .h-secondary {
+        font-size: 1.5rem;
+        padding: 12px;
+    }
+
+    .center {
+        font-size: 1rem;
+        margin: 5px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+  
+    #famous-place, #services{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));        
+        gap: 10px;
+       padding-left: 55px;
+    }
+
+    .similar,
+    .equal {
+        margin: 11px 0;
+    }
+    .similar img {
+    
+        width: 250px;
+        height: 180px;
+       
+    }
+    .equal img {
+        width: 250px;
+        height: 250px;
+        
+    }
+    .food,
+    .center {
+        font-size: small;
+    }
+    .nav-component h1{
+        font-size: 15px;
+        
+    }
+    .nav-component{
+        padding-right: 4px;
+    }
+    .place{
+        font-size: 1.5rem;
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .food,
+    .center {
+        font-size: medium;
+    }
+    #famous-place, #services{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));       
+        gap: 10px;
+       
+    }
+    
+}
+
